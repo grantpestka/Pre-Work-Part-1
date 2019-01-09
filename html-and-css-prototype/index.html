@@ -1,57 +1,53 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
   <head>
     <meta charset="utf-8">
     <title>HTML/CSS Prototype</title>
     <link rel="stylesheet" href="CSS/stylesheet.css">
   </head>
+
   <body>
     <div class="container">
       <h1>Recreate this using HTML &amp; CSS</h1>
-        <div class="grid3">
-          <div class="speech-bubble fillGrid">
-            <p class="white">
+        <div class="grid">
+          <div id="fundraisingSpeechBuble" class="speech-bubble">
               $167 still needed for this project
-            </p>
           </div>
-          <div class="progressBar grayBorder fillGrid">
-            <div id="fundraisingProgress">
+          <div id="fundraisingProgressBar" class="progressBar">
+            <div id="fundraisingProgress" class="progress">
             </div>
           </div>
-          <div id="fundraisingAsk" class="grayBorder fillGrid lightShadow">
+          <div id="fundraisingMessage" class="bodyText">
+            <p >
+              <strong class="countDown">Only 3 days left</strong> to fund this project.
+            </p>
             <p>
-              <span class="orange"><strong>Only 3 days left</strong></span> to fund this project.<br>
-              <br>
               Join the <strong>42</strong> other donors who have already supported this project. Every dollar helps.
             </p>
           </div>
-          <div id="donationAmount" class="grayBorder fillGrid round">
-            <p class="bigText">
-              <strong>$ <span class="black">50</span></strong>
-            </p>
+          <div id="donationAmount" class="currencyInput">
+              $ <span class="userInput">50</span>
           </div>
-          <div id="giveNow" class="green fillGrid round">
-            <p class="bigText white">
-              <strong>Give Now</strong>
-            </p>
-          </div>
-          <div id="infoLink" class="fillGrid">
-            <p class="blue"><em>Why give $50?</em></p>
-          </div>
-          <div id="save" class="grayBorder fillGrid round darkShadow">
-            <p><strong>Save for later</strong></p>
-          </div>
-          <div id="share" class="grayBorder fillGrid round darkShadow">
-            <p><strong>Tell your friends</strong></p>
-          </div>
+          <a id="giveButton" class="button internal">
+              Give Now
+          </a>
+          <a id="infoLink" class="link">
+            Why give $50?
+          </a>
+          <a id="save" class="button external">
+            Save for later
+          </a>
+          <a id="share" class="button external">
+            Tell your friends
+          </a>
         </div>
     </div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     <div class="container">
       <h1>Recreate this using HTML &amp; CSS</h1>
       <img src="https://s3.amazonaws.com/f.cl.ly/items/2z3C3Z0L2Q0R282p1V0z/Image%202014-12-19%20at%2010.07.09%20AM.png" width="303" />
     </div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
   </body>
 </html>

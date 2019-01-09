@@ -5,12 +5,6 @@
 	padding: 0;
 }
 
-body {
-	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
-	color: #424242;
-	line-height: 1.4;
-}
-
 /* Fonts */
 h1 {
 	font-family: "rooney-web", "AmericanTypewriter", Rockwell, serif;
@@ -40,7 +34,78 @@ h1 {
 */
 
 /* Your CSS code goes here */
-.grid3 {
+a {
+	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+	line-height: 1.40;
+	font-size: 12px;
+	text-align: left;
+	padding-top: 10px;
+	padding-left: 18px;
+	padding-right: 10px;
+	color: #777;
+}
+
+p {
+	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+	line-height: 1.40;
+	font-size: 12px;
+	text-align: left;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 10px;
+	color: #777;
+}
+
+.bodyText {
+	margin-top: -22px;
+	border: 1px #E0E0E0 solid;
+	height: 100%;
+	width: 100%;
+	box-shadow: 0 2px #F4F4F4;
+}
+
+.button {
+	height: 100%;
+	width: 100%;
+	border-radius: 3px;
+	font-weight: bold;
+}
+
+.button.internal {
+	border: 1px #1CBC2C solid;
+	background-color: #3EBE1A;
+	color: #ffffff;
+	font-size: 14px;
+}
+
+.button.external {
+	border: 1px #E0E0E0 solid;
+	background-color: #FAFAFA;
+	margin-top: -20px;
+	box-shadow: 0 1px #DCDCDC;
+}
+
+.countDown {
+	color: #EF5F3C;
+}
+
+.currencyInput {
+	border: 1px #E0E0E0 solid;
+	height: 100%;
+	width: 100%;
+	border-radius: 3px;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+	line-height: 1.40;
+	text-align: left;
+	color: #777;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.grid {
 	display: grid;
 	width: 260px;
   height: 300px;
@@ -48,24 +113,51 @@ h1 {
 	grid-row-gap: 10px;
   grid-column-gap: 0px;
 	align-items: center;
-	/* position: fixed;
-	left: 241px; */
 	position: relative;
 	left: 185px;
 	top: 10px;
 }
 
-/* Code found at https://codepen.io/mchernin34/pen/ojXvLq  and  https://leaverou.github.io/bubbly/*/
+.link {
+	height: 100%;
+	width: 100%;
+	color: #20A1D4;
+	padding-top: 0px;
+	font-style: italic;
+}
+
+.progress {
+	border: 1px #F15E33 solid;
+	background-color: #F15E33;
+
+	height: 100%;
+	width: 194px;
+}
+
+.progressBar {
+	background-color: #FAFAFA;
+	margin-bottom: 0px;
+	border: 1px #E0E0E0 solid;
+	height: 100%;
+	width: 100%;
+}
+
 .speech-bubble {
 	position: relative;
 	background: #424242;
+	color: #FFFFFF;
 	border-radius: 3px;
-	grid-row: 1 / span 1;
-	grid-column: 1 / span 5;
-	padding-left: 15px;
+	padding-left: 30px;
+	height: 100%;
+	width: 100%;
+	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+	line-height: 1.40;
+	font-size: 12px;
+	text-align: left;
+	padding-top: 10px;
+	padding-right: 10px;
 }
 
-/* Code found at https://codepen.io/mchernin34/pen/ojXvLq  and  https://leaverou.github.io/bubbly/*/
 .speech-bubble:after {
 	content: '';
 	position: absolute;
@@ -81,39 +173,38 @@ h1 {
 	border-width: 8px 6px 0;
 }
 
-.progressBar {
-	background-color: #FAFAFA;
-	grid-column: 1 / span 5;
-	grid-row: 2 / span 1;
-	margin-bottom: 0px;
-}
-
-#fundraisingProgress {
-	border: 1px #F15E33 solid;
-	background-color: #F15E33;
-	grid-column: 1 / span 5;
-	grid-row: 2 / span 1;
-	height: 100%;
-	width: 194px;
-}
-
-#fundraisingAsk {
-	grid-column: 1 / span 5;
-	grid-row: 3 / span 3;
-	margin-top: -22px;
+.userInput {
+	color: #424242;
 }
 
 #donationAmount {
 	grid-column: 2 / span 1;
 	grid-row: 4 / span 1;
-	padding-left: 0px;
 }
 
-#giveNow {
-	border: 1px #1CBC2C solid;
-	grid-column: 4 / span 1;
-	grid-row: 4 / span 1;
-	background-color: #3EBE1A;
+#fundraisingMessage {
+	grid-column: 1 / span 5;
+	grid-row: 3 / span 3;
+}
+
+#fundraisingProgress {
+	grid-column: 1 / span 5;
+	grid-row: 2 / span 1;
+}
+
+#fundraisingProgressBar {
+	grid-column: 1 / span 5;
+	grid-row: 2 / span 1;
+}
+
+#fundraisingSpeechBuble{
+	grid-row: 1 / span 1;
+	grid-column: 1 / span 5;
+}
+
+#giveButton {
+  grid-column: 4 / span 1;
+  grid-row: 4 / span 1;
 }
 
 #infoLink {
@@ -121,138 +212,12 @@ h1 {
 	grid-row: 5 / span 1;
 }
 
-#infoLink p {
-	padding-top: 0px;
-}
-
 #save {
 	grid-column: 1 / span 2;
 	grid-row: 6 / span 1;
-	margin-top: -20px;
 }
 
 #share {
 	grid-column: 4 / span 2;
 	grid-row: 6 / span 1;
-	margin-top: -20px;
 }
-
-/* text */
-p {
-	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
-	line-height: 1.40;
-	font-size: 12px;
-	text-align: left;
-	padding-top: 10px;
-	padding-left: 20px;
-	padding-right: 10px;
-	color: #777;
-}
-
-.white {
-color: #ffffff;
-}
-
-.orange {
-	color: #EF5F3C;
-}
-
-.bigText {
-	font-size: 14px;
-}
-
-.black {
-	color: #424242;
-}
-
-.blue {
-	color: #20A1D4;
-}
-
-/* items */
-.grayBorder {
-	border: 1px #E0E0E0 solid;
-}
-
-.fillGrid {
-	height: 100%;
-	width: 100%;
-}
-
-.round {
-	border-radius: 3px;
-}
-
-.lightShadow {
-	box-shadow: 0 2px #F4F4F4;
-}
-
-.darkShadow {
-	box-shadow: 0 1px #DCDCDC;
-}
-/*scratch*/
-/* p {
-	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
-	color: #424242;
-	line-height: 1.4;
-} */
-
-/* .grid {
-	display: grid;
-	width: 300px;
-  height: 500px;
-	grid-template: 50px 10px 300px 90px/ 50% 50% ;
-	grid-row-gap: 10px;
-  grid-column-gap: 15px;
-	padding: 10px;
-	align-items: center;
-}
-
-.grid1 {
-	display: grid;
-	width: 300px;
-  height: 300px;
-	grid-template: 140px 40px 80px/ 50% 50% ;
-	grid-row-gap: 10px;
-  grid-column-gap: 15px;
-	padding: 10px;
-}
-
-.border {
-	border: 1px #eaeaea solid;
-}
-
-.speachBubble {
-	background-color: #777;
-color: #eaeaea;
-}
-
-#progress {
-	background-color: #EF5F3C;
-	border: 1px #eaeaea solid;
-	height:10px;
-	width:75%;
-}
-
-#donationAmount{
-
-}
-
-#giveNow{
-	background-color: #1CBC2C;
-	text-align: center;
-	color: #eaeaea;
-}
-
-.twoWide {
-	grid-column: 1 / span 2;
-}
-
-.left {
-	text-align: left;
-}
-
-.centerVert {
-	padding-top: 10%;
-	padding-bottom: 10%;
-} */
